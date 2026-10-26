@@ -108,7 +108,7 @@ var APPLICATION_URL = "https://lin.ee/ntlNigq";
       <div><small>排班</small><b>可協調</b></div>
     </div>
     <p class="note">時薪須由雇主確認，並符合聘用當時最低工資。</p>
-    <a class="btn js-apply" href="#apply">立即填寫應徵表單</a>
+    <a class="btn js-apply" href="https://lin.ee/ntlNigq">立即填寫應徵表單</a>
   </div>
 </section>
 
@@ -197,7 +197,7 @@ var APPLICATION_URL = "https://lin.ee/ntlNigq";
   <div class="wrap">
     <h2>從喜歡美妝開始，探索不同的工作機會</h2>
     <p>填寫基本資料，讓招募窗口進一步了解您的條件。</p>
-    <a class="btn js-apply" href="#apply">立即填寫應徵表單</a>
+    <a class="btn js-apply" href="https://lin.ee/ntlNigq">立即填寫應徵表單</a>
   </div>
 </section>
 </main>
@@ -231,7 +231,7 @@ var APPLICATION_URL = "https://lin.ee/ntlNigq";
   var isExt=/^https?:\/\//i.test(u);
   document.querySelectorAll(".js-apply").forEach(function(a){
     a.setAttribute("href",u);
-    if(isExt){a.target="_blank";a.rel="noopener noreferrer";}
+    a.removeAttribute("target");
   });
   document.getElementById("y").textContent=new Date().getFullYear();
 })();
